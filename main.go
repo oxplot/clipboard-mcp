@@ -76,7 +76,7 @@ func GetClipboardImageAsPNG() ([]byte, error) {
 
 func run() error {
 
-	mcpServer := server.NewMCPServer("Snowflake", "1.0.0")
+	mcpServer := server.NewMCPServer("Clipboard", "1.0.0")
 
 	// Add a query tool.
 	mcpServer.AddTool(mcp.NewTool(
